@@ -1,10 +1,13 @@
 # javaScriptRepository
 This is the repository, I use for enhancing my skills in JS.
 
-01_basics contains the basics of JS which includes:
+01_Basics contains the basics of JS which includes:
     -- How to run the node file
     -- git commits
-    -- variables
+    -- variables & Data types
     -- operators
+    -- comparsions
+    -- date
+    -- math.js overview
 ------------------------------------
-02_
+02_Arrays_Objects contains the basics for ararys & objects
