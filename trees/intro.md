@@ -2,35 +2,33 @@
 # Introduction to Tree data structure
 
 Things to be dicussed:
-    1. What is tree?
-    2. What is Binary Tree?
-    3. What is Binary Search Tree?
-    4. Important terms for trees.
-    5. Operations in Binary search Tree.
+1. What is tree?
+2. What is Binary Tree?
+3. What is Binary Search Tree?
+4. Important terms for trees.
+5. Operations in Binary search Tree.
 
 ## Trees
 
-Tree
-: Trees are a data structures that link nodes in a parent/child relationship, in the sense that there're nodes that depend on or come off other nodes.
+Tree: Trees are a data structures that link nodes in a parent/child relationship, in the sense that there're nodes that depend on or come off other nodes.
 
-Trees are formed by a**root node**(the first node of the tree) and all the other nodes comes as**chidren**.
+Trees are formed by a **root node**(the first node of the tree) and all the other nodes comes as **chidren**.
 
-The nodes at the bottom of the tree with no descendants are called**leaf nodes**.
+The nodes at the bottom of the tree with no descendants are called **leaf nodes**.
 
-**Height**of the the tree comes of as how many parent/children relations are there in the tree.
+**Height** of the the tree comes of as how many parent/children relations are there in the tree.
 
-Trees are**non-liner**.
+Trees are **non-liner**.
 
-An important requirement for tree formation is that**the only valid connection between nodes is from parent to child**. Connection between**siblings or from child to parent are not allowed in trees**(these types of connections form graphs, a different type of data structure). 
+An important requirement for tree formation is that **the only valid connection between nodes is from parent to child**. Connection between **siblings or from child to parent are not allowed in trees** (these types of connections form graphs, a different type of data structure). 
 
-Another important requirement is that**trees must have only one root**.
+Another important requirement is that **trees must have only one root**.
 
 -------------------------------------------------------
 
 ## Binary Tree
 
-Binary Tree
-: Trees are a type of tree in which each node has a maximum of two children.
+Binary Tree: Trees are a type of tree in which each node has a maximum of two children.
 
 One key situation in which binary trees are really useful is in **searching**. And for searching, a certain type of binary tree is used, called**binary search trees (BSTs)**.
 
@@ -43,10 +41,10 @@ This order in its values make this data structure great for searching, since on 
 When inserting or deleting values, the algorithm will follow the following steps:
 
 Check if there's a root node.
-    > If there is, check if the value to add/delete is greater or smaller than the node.
-    > If it is smaller, check if there is a node to the left and repeat the previous operation. If there's not, add/remove the node in that position.
-    > If it is greater, check if there is a node to the right and repeat the previous operation. If there's not, add/remove the node in that position.
-    > Searching in BSTs is very similar, only instead of adding/deleting values we check the nodes for equality with the value we're looking for.
+> If there is, check if the value to add/delete is greater or smaller than the node.
+> If it is smaller, check if there is a node to the left and repeat the previous operation. If there's not, add/remove the node in that position.
+> If it is greater, check if there is a node to the right and repeat the previous operation. If there's not, add/remove the node in that position.
+> Searching in BSTs is very similar, only instead of adding/deleting values we check the nodes for equality with the value we're looking for.
 
 The big O complexity of these operations is logarithmic **(log(n))**. But it's important to recognize that for this complexity to be achieved, the tree **must have a balanced structure** so that in each search step, approximately half of the data can be "discarded". **If more values are stored to one side or another of three, the efficiency of the data structure is affected**.
 
