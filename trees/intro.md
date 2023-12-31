@@ -30,7 +30,7 @@ Another important requirement is that **trees must have only one root**.
 
 Binary Tree: Trees are a type of tree in which each node has a maximum of two children.
 
-One key situation in which binary trees are really useful is in **searching**. And for searching, a certain type of binary tree is used, called**binary search trees (BSTs)**.
+One key situation in which binary trees are really useful is in **searching**. And for searching, a certain type of binary tree is used, called **binary search trees (BSTs)**.
 
 BSTs are just like binary trees but **information within them is ordered in a way that makes them a suitable data structure for searching**.
 
@@ -40,11 +40,11 @@ This order in its values make this data structure great for searching, since on 
 
 When inserting or deleting values, the algorithm will follow the following steps:
 
-Check if there's a root node.
-> If there is, check if the value to add/delete is greater or smaller than the node.
-> If it is smaller, check if there is a node to the left and repeat the previous operation. If there's not, add/remove the node in that position.
-> If it is greater, check if there is a node to the right and repeat the previous operation. If there's not, add/remove the node in that position.
-> Searching in BSTs is very similar, only instead of adding/deleting values we check the nodes for equality with the value we're looking for.
+> 1. Check if there's a root node.
+> 2. If there is, check if the value to add/delete is greater or smaller than the node.
+> 3. If it is smaller, check if there is a node to the left and repeat the previous operation. If there's not, add/remove the node in that position.
+> 4. If it is greater, check if there is a node to the right and repeat the previous operation. If there's not, add/remove the node in that position.
+> 5. Searching in BSTs is very similar, only instead of adding/deleting values we check the nodes for equality with the value we're looking for.
 
 The big O complexity of these operations is logarithmic **(log(n))**. But it's important to recognize that for this complexity to be achieved, the tree **must have a balanced structure** so that in each search step, approximately half of the data can be "discarded". **If more values are stored to one side or another of three, the efficiency of the data structure is affected**.
 
